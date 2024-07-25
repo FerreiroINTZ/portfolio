@@ -1,0 +1,5 @@
+1- Em "start" é preciso fazer com q o ".info", ao ser exibido, nao empurre os elementos.
+
+2- Em "tecnologias", e preciso fazer com q os elementos se espandam, exibindo masi informaçoes sobre.
+
+3-
