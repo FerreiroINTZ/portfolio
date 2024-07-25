@@ -4,8 +4,7 @@ import me from '../imgs/WhatsApp Image 2024-07-07 at 16.14.20.jpeg'
 // import arow from "../imgs/"
 
 function start() {
-  const [hable, setHable] = useState(true)
-  const texto = "Sou um jovem entusiasta da tecnologia e desenvolvedor indie Front-End. Meu sonho é ser o desenvolvedor full-stack de uma grande empresa, entretanto o Front-End anda sendo minha principal paixao, no momento."
+  console.log(window)
 
   return (
     <div className='cover'>
@@ -20,14 +19,18 @@ function start() {
         <div className='photo'>
           <img src={me} alt="" />
         </div>
-        <div className='info' onClick={() => setHable(!hable)}>
-          <p>Seja bem vindo ao meu portifolio pessoal. Aqui voçê vera informações sobre mim.</p>
-          <p>{hable ? texto : ""}</p>
-          <span 
-            class="material-symbols-outlined arrow">
-            arrow_right
-          </span>
-        </div>
+        <input type="checkbox" id="show-details"/>
+        <label htmlFor="show-details" className='info' >
+            <div>
+              <p>Seja bem vindo ao meu portifolio pessoal. Aqui voçê vera informações sobre mim.</p>
+              <p>Sou um desenvolvedor Front-End indie. Atualmente atuo como Freelancer, mas almejo um posto da minha area em uma emoresa.</p>
+            </div>
+            <span
+              className="material-symbols-outlined arrow">
+              arrow_right
+            </span>
+        </label>
+        
     </div>
   )
 }

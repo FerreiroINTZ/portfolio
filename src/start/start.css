@@ -87,17 +87,42 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
         font-family: 'IBM Plex Mono';
         font-size: 20px;
         grid-area: info;
         width: 530px;
+        height: fit-contents;
         text-align: center;
         cursor: pointer;
+        transition: .3s;
+        /* background: red; */
+
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 60px;
+            overflow: hidden;
+            /* background: green; */
+            transition: .3s;
+        }
 
         .arrow{
             /* font-size: 10px; */
             transform: rotate(90deg);
+            transition: .3s;
         }
+    }
+
+    #show-details{
+        display: none;
+    }
+
+    #show-details:checked + .info div{
+        height: 150px;
+    }
+
+    #show-details:checked + .info .arrow{
+        transform: rotate(-90deg);
     }
 }
