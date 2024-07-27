@@ -23,7 +23,7 @@ function start() {
         <label htmlFor="show-details" className='info' >
             <div>
               <p>Seja bem vindo ao meu portifolio pessoal. Aqui voçê vera informações sobre mim.</p>
-              <p>Sou um desenvolvedor Front-End indie. Atualmente atuo como Freelancer, mas almejo um posto da minha area em uma emoresa.</p>
+              <p>Sou um desenvolvedor Front-End indie. Atualmente atuo como Freelancer, mas almejo um posto da minha area em uma empresa.</p>
             </div>
             <span
               className="material-symbols-outlined arrow">

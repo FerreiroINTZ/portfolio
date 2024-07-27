@@ -26,7 +26,7 @@ function itecnologias() {
         </li>
         <li>
           <img src={react} alt="react"/>
-          <p><strong>eact</strong></p>
+          <p><strong>React</strong></p>
         </li>
         <li>
           <img src={figma} alt="figma"/>
