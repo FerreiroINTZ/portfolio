@@ -10,9 +10,9 @@ function header() {
         </div>
             <ul>
                 <nav>
-                    <li>Habilidades</li>
-                    <li>Projetos</li>
-                    <li>Contato</li>
+                    <li><a href="#tecnologias-section">Tecnologias</a></li>
+                    <li><a href="#projects-section">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </nav>
                 <li>
                     <span>Linguagem:</span>

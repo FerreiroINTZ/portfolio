@@ -7,8 +7,8 @@ import react from '../imgs/tec/reactJs.png'
 import figma from '../imgs/tec/figma-site.png'
 import git from '../imgs/tec/git-colored.png'
 
-import effect from "../sounds/pass.wav"
-import effect2 from "../sounds/io-mix.wav"
+import effect from "../sounds/hover.wav"
+import effect2 from "../sounds/selected.wav"
 
 function itecnologias() {
 
@@ -27,7 +27,7 @@ function itecnologias() {
   }
 
   return (
-    <section className='tecnologias-section'>
+    <section id='tecnologias-section'>
       <audio src={effect} ref={audio}></audio>
       <audio src={effect2} ref={audio2}></audio>
       <h2>Tecnologias</h2>

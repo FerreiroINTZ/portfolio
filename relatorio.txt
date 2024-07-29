@@ -2,4 +2,4 @@
 
 2- Em "tecnologias", e preciso fazer com q os elementos se espandam, exibindo masi informaçoes sobre.
 
-3- é preciso criar contexto para reduzzir codigo nas tecnologias e projetos.
+3- é preciso criar contexto para reduzir codigo nas tecnologias e projetos.

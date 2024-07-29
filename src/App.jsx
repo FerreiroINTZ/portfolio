@@ -3,6 +3,7 @@ import Header from './header'
 import Start from './start/start'
 import Tecnologias from "./tecnologias/tecnologias"
 import Projects from './projects/projects'
+import Contatos from './contact/contact'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Start />
       <Tecnologias />
       <Projects />
+      <Contatos />
     </>
   )
 }

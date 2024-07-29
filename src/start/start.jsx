@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import './start.css'
-import me from '../imgs/WhatsApp Image 2024-07-07 at 16.14.20.jpeg'
+import me from '../imgs/perfil.png'
 // import arow from "../imgs/"
 
 function start() {
