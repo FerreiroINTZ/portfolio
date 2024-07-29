@@ -16,14 +16,9 @@ function itecnologias() {
   const audio2 = useRef()
 
   function playAudio(opt){
-    if(opt == 1){
-      audio.current.volume = ".5"
-      audio.current.play()
-    }else{
-      audio2.current.volume = ".5"
-      audio2.current.currentTime = "0"
-      audio2.current.play()
-    }
+    opt.current.currentTime ='0'
+    opt.current.volume = ".5"
+    opt.current.play()
   }
 
   return (
@@ -33,33 +28,33 @@ function itecnologias() {
       <h2>Tecnologias</h2>
       <ul>
           <li 
-            onMouseEnter={() => playAudio(1)}
-            onClick={() => playAudio(2)}>
+            onMouseEnter={() => playAudio(audio)}
+            onClick={() => playAudio(audio2)}>
               <img src={html} alt="html"/>
               <p><strong>HTML</strong></p>
           </li>
-        <li onMouseEnter={() => playAudio(1)}
-            onClick={() => playAudio(2)}>
+        <li onMouseEnter={() => playAudio(audio)}
+            onClick={() => playAudio(audio2)}>
           <img src={css} alt="css" />
           <p><strong>CSS</strong></p>
         </li>
-        <li onMouseEnter={() => playAudio(1)}
-            onClick={() => playAudio(2)}>
+        <li onMouseEnter={() => playAudio(audio)}
+            onClick={() => playAudio(audio2)}>
           <img src={js} alt="JavaScript"/>
           <p><strong>JavaScript</strong></p>
         </li>
-        <li onMouseEnter={() => playAudio(1)}
-            onClick={() => playAudio(2)}>
+        <li onMouseEnter={() => playAudio(audio)}
+            onClick={() => playAudio(audio2)}>
           <img src={react} alt="react"/>
           <p><strong>React</strong></p>
         </li>
-        <li onMouseEnter={() => playAudio(1)}
-            onClick={() => playAudio(2)}>
+        <li onMouseEnter={() => playAudio(audio)}
+            onClick={() => playAudio(audio2)}>
           <img src={figma} alt="figma"/>
           <p><strong>Figma</strong></p>
         </li>
-        <li onMouseEnter={() => playAudio(1)}
-            onClick={() => playAudio(2)}>
+        <li onMouseEnter={() => playAudio(audio)}
+            onClick={() => playAudio(audio2)}>
           <img src={git} alt="git"/>
           <p><strong>Git</strong></p>
         </li>

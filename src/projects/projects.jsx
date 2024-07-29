@@ -1,5 +1,6 @@
 import React, {useRef} from 'react'
 import "./projects.css"
+import Register_React from '../imgs/projects/sigles/register-react_img.png'
 import sound from '../sounds/projects-hover.mp3'
 
 function projects() {
@@ -17,14 +18,14 @@ function projects() {
         <h2>Projetos</h2>
         <ul>
           <li onMouseEnter={() => play_audio()}>
-            <div className="img"><img src="https://www.creativefabrica.com/wp-content/uploads/2019/10/01/Abstract-Technology-Gear-Background-by-ojosujono96.jpg" alt="" /></div>
-            <button>Jogar</button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem deserunt, ad autem dicta expedita deleniti. Consectetur sapiente esse tempora temporibus laudantium ut ex quasi cupiditate, dicta voluptatibus voluptatem quod?</p>
+            <div className="img"><img src={Register_React} alt="" /></div>
+            <button onClick={() => window.open("https://ferreirointz.github.io/Register_React")}>Jogar</button>
+            <p>Um projeto feito para demonstrar as habilidades de frmulario. Foi ultilisado a tecnologias React.</p>
           </li>
-          <li  onMouseEnter={() => play_audio()}>
+          <li  onMouseEnter={() => play_audio()} className='Desabilitado'>
             <div className="img"><img src="https://www.creativefabrica.com/wp-content/uploads/2019/10/01/Abstract-Technology-Gear-Background-by-ojosujono96.jpg" alt="" /></div>
-            <button>Jogar</button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem deserunt, ad autem dicta expedita deleniti. Consectetur sapiente esse tempora temporibus laudantium ut ex quasi cupiditate, dicta voluptatibus voluptatem quod?</p>
+            <button>Desenvolvendo</button>
+            <p>...</p>
           </li>
         </ul>
     </section>
