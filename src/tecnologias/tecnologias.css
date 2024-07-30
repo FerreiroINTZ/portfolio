@@ -36,6 +36,7 @@
             cursor: pointer;
             filter: grayscale(100%);
 
+
             img{
                 width: 80px;
             }
