@@ -1,13 +1,13 @@
 import React from 'react'
 
-function tec_card({card, playAudio}) {
+function tec_card({card, playAudio, ass}) {
     console.log(card)
   return (
     <>
-    <input type="radio" name="radio" id={card.name}/>
+    <input type="radio" name="radio" onClick={x => ass(x)} id={card.name}/>
     <li 
       onMouseEnter={() => playAudio(true)}
-      onClick={() => playAudio(false)}>
+      onClick={x => playAudio(false)}>
           <label htmlFor={card.name}>
             <div className='tec-logo'>
               <img src={card.img} alt={card.name}/>

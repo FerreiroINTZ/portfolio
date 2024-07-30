@@ -23,7 +23,7 @@ export const Contexto = ({children}) =>{
         {
             name: "CSS",
             img: css,
-            info: "Capaz de criar dsigns e animações de forma fluida. O sulficiente para um bom UX"
+            info: "Capaz de criar dsigns e animações de forma fluida. O sulficiente para um bom UX."
         },
         {
             name: "JavaScript",
@@ -43,17 +43,24 @@ export const Contexto = ({children}) =>{
         {
             name: "Git",
             img: git,
-            info: "Essensial para o desenvolvimento em equipe e versionamento."
+            info: "Essensial para o desenvolvimento em equipe e/ou versionamento."
         }
     ])
 
     const [projects, setProjects] = useState([
         {
             img: register,
-            info: "Um projeto feito para demonstrar as habilidades de frmulario. Foi ultilisado a tecnologias React.",
+            info: "Um projeto feito para demonstrar as habilidades de frmulario. Foi ultilizado a tecnologias React.",
             link: "https://ferreirointz.github.io/Register_React",
             able: true
-        },{
+        },
+        {
+            img: build,
+            info: "...",
+            link: "",
+            able: false
+        },
+        {
             img: build,
             info: "...",
             link: "",

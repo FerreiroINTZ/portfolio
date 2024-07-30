@@ -3,3 +3,5 @@
 2- Em "tecnologias", e preciso fazer com q os elementos se espandam, exibindo masi informaçoes sobre.
 
 3- Adaptaçao pro mobile.
+
+4- Adicionar uma seçao para enviar e-mails para mim.
