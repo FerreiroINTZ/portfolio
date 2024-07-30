@@ -30,9 +30,9 @@
 
         .row1{
             position: relative;
-            right: 40px;
+            right: 80px;
             top: 18px;
-            font-size: 40px;
+            font-size: clamp(18px, 33px, 3vw);
 
             font-family: "IBM Plex Mono", monospace;
             font-weight: 400;
@@ -43,19 +43,18 @@
         .row2{
             /* background: red; */
             /* font-size: 90px; */
-            font-size: 90px;
-
+            font-size: clamp(30px, 60px, 6vw);
+            
             font-family: "Crimson Text", serif;
             font-weight: 400;
             font-style: normal;
         }
-
+        
         .row3{
             position: relative;
             left: 30px;
             bottom: 25px;
-            font-size: 20px;
-            align-self: flex-end;
+            font-size: clamp(8px, 20px, 4vw);            align-self: flex-end;
 
             font-family: "IBM Plex Mono", monospace;
             font-weight: 400;
@@ -89,7 +88,7 @@
         flex-direction: column;
         align-items: center;
         font-family: 'IBM Plex Mono';
-        font-size: 20px;
+        font-size: clamp(8px, 20px, 2vw);
         grid-area: info;
         width: 530px;
         height: fit-contents;
@@ -125,5 +124,46 @@
 
     #show-details:checked + .info .arrow{
         transform: rotate(-90deg);
+    }
+}
+
+@media(max-width: 400px){
+    .cover{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        /* background: red; */
+        gap: 20px;
+
+        .title{
+            margin: 0px;
+            gap: 10px;
+            .row1{
+                right: 30px;
+            }
+        }
+
+        .info{
+            width: 100vw;
+            /* height: 60px; */
+            font-size: 10px;
+            /* background: green; */
+
+            #show-details:checked + & div{
+                height: 100%;
+                /* background: blue; */
+            }
+
+            div{
+                width: 100%;
+                /* background: red; */
+                height: 30px;
+                transition: .3s;
+            }
+        }
+
+        .photo{
+            display: none;
+        }
     }
 }

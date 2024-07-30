@@ -17,27 +17,33 @@ export const Contexto = ({children}) =>{
 
     const [tecs, setTecs] = useState([{
             name: "HTML",
-            img: html
+            img: html,
+            info: "HTML é uma tecnologia cricial para a estrutura de um site e para o SEO."
         },
         {
             name: "CSS",
-            img: css
+            img: css,
+            info: "Capaz de criar dsigns e animações de forma fluida. O sulficiente para um bom UX"
         },
         {
             name: "JavaScript",
-            img:js
+            img:js,
+            info: "No quesito cominucação entre cliente e servidor é o elemento chave. Além de permitir interações do usuario com a pagina em si."
         },
         {
             name: "React",
-            img: react
+            img: react,
+            info: 'Um FrameWork que facilita e expande as posibilidades de desenvolvimente usando o JavaScript. Expande para conceitos como: contexto, estados e otimização de performance.'
         },
         {
             name: "Figma",
-            img: Figma
+            img: Figma,
+            info: "Uma ferramenta muito usada para a criação de Wireframes e Mockups."
         },
         {
             name: "Git",
-            img: git
+            img: git,
+            info: "Essensial para o desenvolvimento em equipe e versionamento."
         }
     ])
 

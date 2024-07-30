@@ -1,6 +1,7 @@
 import React from 'react'
-import logo from "./imgs/formato-html.png"
-import brasil_logo from './imgs/bandeira-do-brasil.png'
+import logo from "../imgs/formato-html.png"
+import brasil_logo from '../imgs/bandeira-do-brasil.png'
+import './header.css'
 
 function header() {
   return (
