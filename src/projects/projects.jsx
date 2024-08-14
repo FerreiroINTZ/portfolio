@@ -24,8 +24,9 @@ function projects() {
         <h2>Projetos</h2>
         <ul>
           {
-            projects.map(x =>
+            projects.map((x, index) =>
               <Project_card 
+              key={index}
               project={x}
               play_audio={play_audio}/>
             )

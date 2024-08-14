@@ -6,7 +6,7 @@
     padding: 20px 30px 60px 30px;
     background: #121212;
     border: 3px solid #232323;
-    max-width: 90vw;
+    max-width: 95vw;
 
     h2{
         font-size: 10vw;
@@ -25,7 +25,7 @@
 
         li{
             display: grid;
-            width: 150px;
+            width: clamp(130px, 10vw, 150px);
             overflow: hidden;
             border-radius: 5px;
             filter: grayscale(100%);
@@ -37,20 +37,19 @@
             }
             
             input:checked + &{
-                width: 450px;
+                width: clamp(220px, 30vw, 500px);
                 transform: scale(1.05);
                 filter: grayscale(0%);
             }
 
             label{
                 display: grid;
-                grid-template-columns: 150px 1fr;
-                /* flex-direction: column; */
-                /* gap: 20px; */
+                /* isso vai mecher na posicao dos das logos e nomes */
+                grid-template-columns: clamp(130px, 10vw, 150px) 1fr;
                 align-items: center;
                 align-content: center;
                 width: 100%;
-                height: 200px;
+                height: clamp(150px, 20vw, 200px);
                 background: #343434;
                 font-family: "Roboto", sans-serif;
                 font-weight: 700;
@@ -59,7 +58,6 @@
                 transition: .3s;
                 cursor: pointer;
                 overflow: hidden;
-                /* background: blue; */
 
                 .tec-logo{
                     justify-self: center;
@@ -73,24 +71,28 @@
                     /* background: green; */
                 }
 
+                .tec-name{
+                    font-size: clamp(6px, 20vw, 23px);
+                }
+
                 .tec-info{
-                    font-size: 1rem;
+                    font-size: clamp(8px, 2vw, 1.1vw);
                     font-family: "IBM Plex Mono", monospace;
                     font-weight: 400;
                     font-style: normal;
                     
-                    text-align: left;
+                    display: flex;
+                    align-items: center;
                     width: fit-content;
-                    padding: 30px 30px 30px 0px;
                     margin-right: 20px;
                     height: 100%;
                     overflow: hidden;
-                    /* background: green; */
+                    text-align: left;
                 }
 
 
                 img{
-                    width: 80px;
+                    width: clamp(30px, 15vw, 80px);
                 }
             
             }

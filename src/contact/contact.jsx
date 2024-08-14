@@ -33,7 +33,7 @@ function contact() {
             onMouseEnter={() => play_audio()}
             className='e-mail'
             onClick={() => {
-              navigator.clipboard.write('gabrielferreiro963@gmail.com')
+              navigator.clipboard.writeText('gabrielferreiro963@gmail.com')
               // setCopiado(true)
             }}>
             <img src={gMail} alt="e-mail" className='logos' />

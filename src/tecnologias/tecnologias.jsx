@@ -1,4 +1,4 @@
-import React, {useRef, useContext, useState} from 'react'
+import React, {useRef, useContext, useState, useEffect} from 'react'
 import { Context } from '../contents'
 import './tecnologias.css'
 
@@ -8,20 +8,32 @@ import effect from "../sounds/hover.wav"
 import effect2 from "../sounds/selected.wav"
 
 function itecnologias() {
+  //  elemento anterior
+  const [elemento, SetElemento] = useState()
 
   const {tecs} = useContext(Context)
 
+  
   function ass(element){
+    
+    console.log("value: ",element.target.value)
+    if(elemento){ // verifica se o "elemento anterior" existe
+      if(elemento.id != element.target.id) // verifica se o elemento atual nao é o anterior
+        console.log(elemento)
+        elemento.value = "on" // define isto pois antes tava dando problema de inputs de values iguais
+      }
+
     if(element.target.value == "ativo"){
       element.target.checked = false
-      element.target.value = ""
+      element.target.value = "on"
     }else{
       element.target.value = "ativo"
     }
-  }
+      SetElemento(element.target)
+    }
 
-  const audio = useRef()
-  const audio2 = useRef()
+    const audio = useRef()
+    const audio2 = useRef()
 
   function playAudio(opt){
     if(opt){
@@ -41,8 +53,9 @@ function itecnologias() {
       <audio src={effect2} ref={audio2}></audio>
       <h2>Tecnologias</h2>
       <ul>
-        {tecs.map(x =>
+        {tecs.map((x, index) =>
           <Tec_card 
+            key={index}
             ass={ass}
             card={x}
             playAudio={playAudio}/>

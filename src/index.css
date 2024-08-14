@@ -16,17 +16,14 @@ html{
 }
 
 #root{
-  width: 100vw;
-  background-color: green;
+  width: 99vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 body{
-  width: 99vw; 
   background: #0C072D;
-  /* background: #050312;h */
   color: white;
 
   &::-webkit-scrollbar{
@@ -59,7 +56,7 @@ h2{
     display: none;
   }
 
-  #contact{
+  /* #contact{
     display: none;
-  }
+  } */
 }

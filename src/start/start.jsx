@@ -4,8 +4,6 @@ import me from '../imgs/perfil.png'
 // import arow from "../imgs/"
 
 function start() {
-  console.log(window)
-
   return (
     <div className='cover'>
         <div>
