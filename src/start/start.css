@@ -7,9 +7,9 @@
     ;
     justify-items: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     /* background: red; */
-    margin: 80px 0px 0px 0px;
+    margin-top: clamp(50px, 5vw, 5vw);
 
     .light{
         position: absolute;
@@ -21,7 +21,7 @@
     }
 
     .title{
-        margin: 0px 0px 0px 30px;
+        /* margin: 0px 0px 0px 30px; */
         /* background: green; */
         display: flex;
         flex-direction: column;
@@ -30,20 +30,19 @@
 
         .row1{
             position: relative;
-            right: 80px;
-            top: 18px;
-            font-size: clamp(18px, 33px, 3vw);
+            right: clamp(10px, 4vw, 4vw);
+            top: 20px;
+            font-size: clamp(14px, 1.8vw, 3vw);
 
             font-family: "IBM Plex Mono", monospace;
             font-weight: 400;
             font-style: normal;
-
         }
 
         .row2{
             /* background: red; */
             /* font-size: 90px; */
-            font-size: clamp(30px, 60px, 6vw);
+            font-size: clamp(30px, 5vw, 6vw);
             
             font-family: "Crimson Text", serif;
             font-weight: 400;
@@ -53,7 +52,7 @@
         .row3{
             position: relative;
             left: 30px;
-            bottom: 25px;
+            bottom: clamp(23px, 2vw, 10vw);
             font-size: clamp(8px, 20px, 4vw);            align-self: flex-end;
 
             font-family: "IBM Plex Mono", monospace;
@@ -64,8 +63,7 @@
     }
 
     .photo{
-        width: 400px;
-        height: 400px;
+        width: clamp(0px, 40vw, 500px);
         overflow: hidden;
         border-radius: 10px;
         border: 3px solid white;
@@ -90,7 +88,7 @@
         font-family: 'IBM Plex Mono';
         font-size: clamp(8px, 20px, 2vw);
         grid-area: info;
-        width: 530px;
+        width: clamp(80px, 40vw, 40vw);
         height: fit-contents;
         text-align: center;
         cursor: pointer;
@@ -127,12 +125,13 @@
     }
 }
 
-@media(max-width: 400px){
+@media(width < 450px){
     .cover{
         display: flex;
         width: 100vw;
         flex-direction: column;
         /* background: red; */
+        /* Gap entre a titulo e as informacoes */
         gap: 20px;
 
         .title{

@@ -17,7 +17,7 @@ function header() {
                 </nav>
                 <li>
                     <span>Linguagem:</span>
-                    <div className="img"><img src={brasil_logo} alt="" /></div>
+                    <img src={brasil_logo} alt="" />
                 </li>
             </ul>
     </header>
